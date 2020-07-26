@@ -31,7 +31,7 @@ console.log(getPairs());
 function getThemes() {
 	let getThemes = [];
 	for (let i = 0; i < themes.length; i++) {
-		getThemes.push([newPairs[i], themes[i]]);
+		getThemes.push([newPairs[i].join(' та '), themes[i]]);
 	}
 	return getThemes;
 }
@@ -53,7 +53,7 @@ console.log(getMarks());
 function getMarksForProject() {
 	let getMarksForProject = [];
 	for (let i = 0; i < newThemes.length; i++) {
-		getMarksForProject.push([newThemes[i], Math.ceil(Math.random()*5)]);
+		getMarksForProject.push([newPairs[i].join(' та '), themes[i], Math.ceil(Math.random()*5)]);
 	}
 	return getMarksForProject;
 }
