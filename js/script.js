@@ -20,7 +20,7 @@ function getPairs() {
 		}
 	}
 	for (let i = 0; i < (students.length)/2; i++) {
-		getPairs.push([` ${boys[i]} і ${girls[i]}`]);
+		getPairs.push([boys[i], girls[i]]);
 	}
 	return getPairs;
 }
@@ -31,7 +31,7 @@ console.log(getPairs());
 function getThemes() {
 	let getThemes = [];
 	for (let i = 0; i < themes.length; i++) {
-		getThemes.push([` ${newPairs[i]}: ${themes[i]}`]);
+		getThemes.push([newPairs[i], themes[i]]);
 	}
 	return getThemes;
 }
@@ -42,7 +42,7 @@ console.log(getThemes());
 function getMarks() {
 	let getMarks = [];
 	for (let i = 0; i < students.length; i++) {
-		getMarks.push([`${students[i]}: ${marks[i]}`]);
+		getMarks.push([students[i], marks[i]]);
 	}
 	return getMarks;
 }
@@ -53,7 +53,7 @@ console.log(getMarks());
 function getMarksForProject() {
 	let getMarksForProject = [];
 	for (let i = 0; i < newThemes.length; i++) {
-		getMarksForProject.push([`${newThemes[i]}, marks: ${Math.ceil(Math.random()*5)}`]);
+		getMarksForProject.push([newThemes[i], Math.ceil(Math.random()*5)]);
 	}
 	return getMarksForProject;
 }
